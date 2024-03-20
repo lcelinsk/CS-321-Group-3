@@ -4,6 +4,9 @@ public class Attorney{
 	private String BarID = "";
 	private String state = "";
 	
+	//Constructor for Attorney class
+	public Attorney(){}
+	
 	//Getter methods for the Attorney class
 	public String getFullName(){
 		return this.fullName;
