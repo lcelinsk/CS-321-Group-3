@@ -8,6 +8,9 @@ public class Form{
 	private String immigrantEmail = "";
 	private String ID = "";
 	
+	//Contructor method for the Form object
+	public Form(){}
+	
 	//Getter methods for all Form attributes
 	public boolean getRequireAttorney(){
 		return this.requireAttorney;
