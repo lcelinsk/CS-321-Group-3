@@ -25,10 +25,10 @@ public class AttorneyTest {
 
     @Test
     public void testGetBarID(){
-		Attorney attr = new Attorney();
+	Attorney attr = new Attorney();
         attr.setBarID("1234");
         Assert.assertEquals("1234", attr.getBarID());
-	}
+    }
 	
     @Test
     public void testSetState(){
@@ -38,8 +38,8 @@ public class AttorneyTest {
     }
 
     @Test
-	public void testGetState(){
-		Attorney attr = new Attorney();
+    public void testGetState(){
+	Attorney attr = new Attorney();
         attr.setState("VA");
         Assert.assertEquals("VA", attr.getState());
     }
