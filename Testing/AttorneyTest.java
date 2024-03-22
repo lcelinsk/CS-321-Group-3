@@ -43,13 +43,17 @@ public class AttorneyTest {
         attr.setState("VA");
         Assert.assertEquals("VA", attr.getState());
     }
-
+	//These previous tests ensure that the set and get methods for every attribute function normally
+	
+	
+	//The following tests ensure that the equals function overridden in the Attorney class correctly reports
+	//whether two Attorney objects are equal based on their BarID
     @Test
     public void testEqualsTrue(){
         Attourney attr1 = new Attorney();
         Attourney attr2 = new Attorney();
-        attr1.setID("A12345");
-        attr2.setID("A12345");
+        attr1.setBarID("A12345");
+        attr2.setBarID("A12345");
         Assert.assertEquals(attr1.equals(attr2), true);
     }
 
@@ -57,8 +61,8 @@ public class AttorneyTest {
     public void testEqualsFalse(){
         Attourney attr1 = new Attorney();
         Attourney attr2 = new Attorney();
-        attr1.setID("A12345");
-        attr2.setID("1234");
+        attr1.setBarID("A12345");
+        attr2.setBarID("1234");
         Assert.assertEquals(attr1.equals(attr2), false);
     }
 }
