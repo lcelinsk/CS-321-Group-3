@@ -7,8 +7,7 @@ public class Attorney{
 	//Constructor for Attorney class
 	public Attorney(){}
 	
-	//equals method override
-	@Override
+	//equals method
 	public boolean equals(Attorney other){
 		return this.BarID.equals(other.BarID);
 	}
