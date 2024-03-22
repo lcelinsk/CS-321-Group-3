@@ -1,5 +1,8 @@
 import org.junit.*;
-
+/*
+* CS 321 Section 004
+* Group 3
+*/
 public class AttorneyTest {
 
     @Test
