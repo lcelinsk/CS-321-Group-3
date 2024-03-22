@@ -41,7 +41,7 @@ public class Form{
 	}
 	
 	//Setter methods for all Form attributes
-	public void setRequireAttorney(String requireAttorney){
+	public void setRequireAttorney(Boolean requireAttorney){
 		this.requireAttorney = requireAttorney;
 	}
 	
