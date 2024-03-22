@@ -1,31 +1,10 @@
 import org.junit.*;
 
-public class testForm {
-
-    @Before
-    public void setup() {
-        //setup test attourneys
-        Attorney attrA = new Attorney();
-        attrA.setFullName("Brian Sam");
-        attrA.setBarID("A12345");
-        attrA.setState("FL");
-
-        Attorney attrB = new Attorney();
-        attrB.setFullName("Matt Louis");
-        attrB.setBarID("1234");
-        attrB.setState("VA");
-
-        //setup test form
-        Form testForm = new Form();
-        testForm.setRequireAttorney(true);
-        testForm.setAttorney(attrA);
-        testForm.setLegalAssistance("I need legal assistance NOW!");
-        testForm.setFormCorrection("This form is terrible!");
-        testForm.setApproved(true);
-        testForm.setImmigrantEmail("email1@email.email");
-        testForm.setID("A123");
-    }
-
+public class FormTest {
+	
+	//The following tests ensure that the set and get methods of the Form class
+	//all perform as intended with different input types.
+	
     @Test
     public void testSetRequireAttourney(){
         Form testForm = new Form();
