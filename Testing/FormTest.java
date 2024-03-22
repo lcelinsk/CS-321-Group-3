@@ -1,5 +1,8 @@
 import org.junit.*;
-
+/*
+* CS 321 Section 004
+* Group 3
+*/
 public class FormTest {
 	
 	//The following tests ensure that the set and get methods of the Form class
