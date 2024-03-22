@@ -43,4 +43,22 @@ public class AttorneyTest {
         attr.setState("VA");
         Assert.assertEquals("VA", attr.getState());
     }
+
+    @Test
+    public void testEqualsTrue(){
+        Attourney attr1 = new Attorney();
+        Attourney attr2 = new Attorney();
+        attr1.setID("A12345");
+        attr2.setID("A12345");
+        Assert.assertEquals(attr1.equals(attr2), true);
+    }
+
+    @Test
+    public void testEqualsFalse(){
+        Attourney attr1 = new Attorney();
+        Attourney attr2 = new Attorney();
+        attr1.setID("A12345");
+        attr2.setID("1234");
+        Assert.assertEquals(attr1.equals(attr2), false);
+    }
 }

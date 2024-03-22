@@ -7,6 +7,12 @@ public class Attorney{
 	//Constructor for Attorney class
 	public Attorney(){}
 	
+	//equals method override
+	@Override
+	public boolean equals(Attorney other){
+		return this.BarID.equals(other.BarID);
+	}
+
 	//Getter methods for the Attorney class
 	public String getFullName(){
 		return this.fullName;
