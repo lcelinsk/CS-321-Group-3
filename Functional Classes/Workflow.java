@@ -1,3 +1,7 @@
+/*
+* CS 321 Section 004
+* Group 3
+*/
 public class Workflow{
 	//Class Attributes
 	
