@@ -63,7 +63,7 @@ public class Workflow{
 	}
 	
 	//Taking the form from the front of the reviewWF queue
-	public Form retriveReviewWF(){
+	public Form retrieveReviewWF(){
 		if(reviewWFHead == null){
 			return null;
 		}
@@ -96,7 +96,7 @@ public class Workflow{
 	}
 	
 	//Taking the form from the front of the approvalWF queue
-	public Form approvalReviewWF(){
+	public Form retrieveApprovalReviewWF(){
 		if(approvalWFHead == null){
 			return null;
 		}
