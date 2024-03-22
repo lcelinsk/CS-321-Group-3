@@ -1,6 +1,6 @@
 import org.junit.*;
 
-public class FormTest {
+public class testForm {
 
     @Before
     public void setup() {
@@ -28,78 +28,99 @@ public class FormTest {
 
     @Test
     public void testSetRequireAttourney(){
+        Form testForm = new Form();
         testForm.setRequireAttorney(false);
         Assert.assertEquals(testForm.getRequireAttorney(), false);
     }
 
     @Test
     public void testGetRequireAttourney(){
-        Assert.assertEquals(testForm.getRequireAttorney(), true);
+        Form testForm = new Form();
+        Assert.assertEquals(testForm.getRequireAttorney(), false);
     }
 
     @Test
-    public Attorney testSetAttorney(){
+    public void testSetAttorney(){
+        Form testForm = new Form();
+        Attorney attrB = new Attorney();
         testForm.setAttorney(attrB);
         Assert.assertEquals(testForm.getAttorney(), attrB);
 	}
 
     @Test
-    public Attorney testGetAttorney(){
+    public void testGetAttorney(){
+        Form testForm = new Form();
+        Attorney attrA = new Attorney();
+        testForm.setAttorney(attrA);
         Assert.assertEquals(testForm.getAttorney(), attrA);
 	}
 	
     @Test
-	public String testSetLegalAssistance(){
+	public void testSetLegalAssistance(){
+        Form testForm = new Form();
         testForm.setLegalAssistance("Assistance please?");
         Assert.assertEquals(testForm.getLegalAssistance(), "Assistance please?");
 	}
 	
     @Test
-    public String testGetLegalAssistance(){
+    public void testGetLegalAssistance(){
+        Form testForm = new Form();
+        testForm.setLegalAssistance("I need legal assistance NOW!");
         Assert.assertEquals(testForm.getLegalAssistance(), "I need legal assistance NOW!");
 	}
 
 	@Test
-    public String testSetFormCorrection(){
+    public void testSetFormCorrection(){
+        Form testForm = new Form();
         testForm.setFormCorrection("Fix this form!");
         Assert.assertEquals(testForm.getFormCorrection(), "Fix this form!");
 	}
 	
     @Test
-    public String testGetFormCorrection(){
+    public void testGetFormCorrection(){
+        Form testForm = new Form();
+        testForm.setFormCorrection("This form is terrible!");
         Assert.assertEquals(testForm.getFormCorrection(), "This form is terrible!");
 	}
 
 	@Test
-    public boolean testSetApproved(){
+    public void testSetApproved(){
+        Form testForm = new Form();
         testForm.setApproved(false);
         Assert.assertEquals(testForm.getApproved(), false);
 	}
 	
 	@Test
-    public boolean testGetApproved(){
-        Assert.assertEquals(testForm.getApproved(), true);
+    public void testGetApproved(){
+        Form testForm = new Form();
+        Assert.assertEquals(testForm.getApproved(), false);
 	}
 
     @Test
-    public String testSetImmigrantEmail(){
+    public void testSetImmigrantEmail(){
+        Form testForm = new Form();
         testForm.setImmigrantEmail("email2@email.email");
         Assert.assertEquals(testForm.getImmigrantEmail(), "email2@email.email");
 	}
 	
 	@Test
-    public String testGetImmigrantEmail(){
+    public void testGetImmigrantEmail(){
+        Form testForm = new Form();
+        testForm.setImmigrantEmail("email1@email.email");
         Assert.assertEquals(testForm.getImmigrantEmail(), "email1@email.email");
 	}
     
     @Test
-    public String testSetID(){
+    public void testSetID(){
+        Form testForm = new Form();
         testForm.setID("B456");
         Assert.assertEquals(testForm.getID(), "B456");
 	}
     
     @Test
-    public String testGetID(){
+    public void testGetID(){
+        Form testForm = new Form();
+        testForm.setID("A123");
         Assert.assertEquals(testForm.getID(), "A123");
 	}
 }
